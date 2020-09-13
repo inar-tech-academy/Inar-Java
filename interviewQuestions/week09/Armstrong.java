@@ -12,7 +12,23 @@ public class Armstrong {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-
+		//KISS -> Keep It Stupid Simple
+		System.out.println(isArmstrong(153));
+		System.out.println(isArmstrong(15));
+		
+		
+	}
+	
+	public static boolean isArmstrong(int num){
+		int temp = num;//153
+		int sum = 0;
+		while(temp >= 1){
+			int digit = temp % 10 ; //3  //5
+			sum += (int) Math.pow(digit, 3);
+			temp /= 10; //15 //1 
+		}
+		
+		return sum == num;
 	}
 
 }
