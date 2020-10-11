@@ -20,7 +20,7 @@ public class Filter {
 	public static boolean filterBadWords(String text){
 		//dumba dumb idiots !!!
 		// this product is dumb!=> ["this", "product", "is" "dumb!"]
-		String[] words = text.split(" ");
+		String[] words = text.split("//s");
 		
 		for (int i = 0; i < words.length; i++) {
 			for (int j = 0; j < badwords.length; j++) {
