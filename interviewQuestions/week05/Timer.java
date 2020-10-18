@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class Timer {
 
-	public static void main(String[] args) throws InterruptedException  {
+	public static void main(String[] args)  {
 		Scanner input = new Scanner(System.in);
 		System.out.println("Enter a time period : ");
 		int time = input.nextInt();
@@ -33,9 +33,15 @@ public class Timer {
 			
 			
 			System.out.printf( "%2d:%s\n" ,minute, s );
-			Thread.sleep(1000);
+			try {
+				int a =5;
+			} 
+			finally{
+				
+			}
 			
 		}
+		
 
 	}
 
